@@ -16,12 +16,17 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.3.0'
+gem 'font-awesome-sass', '~> 4.7.0'
+gem 'capybara'
+gem 'selenium-webdriver'
+gem "chromedriver-helper"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails'
+  gem 'dotenv-rails'
 end
 
 group :development do
