@@ -16,17 +16,20 @@ ActiveRecord::Schema.define(version: 20170602190734) do
   enable_extension "plpgsql"
 
   create_table "leads", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "zip_code_id"
     t.string "parcel_number"
     t.string "address"
     t.string "city"
     t.string "state"
-    t.string "zip"
     t.string "status"
     t.string "lead_type"
     t.float "price"
     t.float "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_leads_on_user_id"
+    t.index ["zip_code_id"], name: "index_leads_on_zip_code_id"
   end
 
   create_table "user_zip_codes", force: :cascade do |t|
@@ -57,11 +60,11 @@ ActiveRecord::Schema.define(version: 20170602190734) do
 
   create_table "zip_codes", force: :cascade do |t|
     t.string "value"
-    t.string "median_listing_price"
-    t.string "average_listing_price"
-    t.string "price_to_rent_ratio"
-    t.string "median_rent"
-    t.string "estimated_rent"
+    t.float "median_listing_price"
+    t.float "average_listing_price"
+    t.float "price_to_rent_ratio"
+    t.float "median_rent"
+    t.float "estimated_rent"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

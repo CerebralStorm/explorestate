@@ -3,7 +3,10 @@ class Lead < ApplicationRecord
   ACTIVE_STATUS = 'active'
   INACTIVE_STATUS = 'inactive'
   CLOSED_STATUS = 'closed'
-  STATUSES = [NEW_STATUS, ACTIVE_STATUS, INACTIVE_STATUS, CLOSED_STATUS].freeeze
+  STATUSES = [NEW_STATUS, ACTIVE_STATUS, INACTIVE_STATUS, CLOSED_STATUS].freeze
+
+  belongs_to :user
+  belongs_to :zip_code
 
   before_save :set_default_status
 

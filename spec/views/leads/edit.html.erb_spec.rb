@@ -2,15 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "leads/edit", type: :view do
   before(:each) do
-    @lead = assign(:lead, Lead.create!(
-      :parcel_number => "MyString",
-      :address => "MyString",
-      :city => "MyString",
-      :state => "MyString",
-      :zip => "MyString",
-      :status => "MyString",
-      :lead_type => "MyString"
-    ))
+    lead = create(:lead)
+    @lead = assign(:lead, lead)
   end
 
   it "renders the edit lead form" do
@@ -26,7 +19,7 @@ RSpec.describe "leads/edit", type: :view do
 
       assert_select "input[name=?]", "lead[state]"
 
-      assert_select "input[name=?]", "lead[zip]"
+      assert_select "input[name=?]", "lead[zip_code_id]"
 
       assert_select "input[name=?]", "lead[status]"
 
