@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @zip_code.value %>
+</p>
+
+<p>
+  <strong>Median listing price:</strong>
+  <%= @zip_code.median_listing_price %>
+</p>
+
+<p>
+  <strong>Average listing price:</strong>
+  <%= @zip_code.average_listing_price %>
+</p>
+
+<p>
+  <strong>Price to rent ratio:</strong>
+  <%= @zip_code.price_to_rent_ratio %>
+</p>
+
+<p>
+  <strong>Median rent:</strong>
+  <%= @zip_code.median_rent %>
+</p>
+
+<p>
+  <strong>Estimated rent:</strong>
+  <%= @zip_code.estimated_rent %>
+</p>
+
+<%= link_to 'Edit', edit_zip_code_path(@zip_code) %> |
+<%= link_to 'Back', zip_codes_path %>

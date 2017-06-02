@@ -363,7 +363,7 @@
 }
 .block.block-bg-noise,
 .block.block-bg-noise:after {
-  background: #ededed url(../img/bg_noise-bg.png) left top repeat;
+  background: #ededed image-url('bg_noise-bg.png') left top repeat;
 }
 .block.block-bg-grey,
 .block.block-bg-grey:after {
@@ -529,7 +529,7 @@
 }
 .block-contained.block-bg-noise,
 .block-contained.block-bg-noise:after {
-  background: #ededed url(../img/bg_noise-bg.png) left top repeat;
+  background: #ededed image-url('bg_noise-bg.png') left top repeat;
 }
 .block-contained.block-bg-grey,
 .block-contained.block-bg-grey:after {
@@ -708,7 +708,7 @@
 }
 .block-highlight.block-bg-noise,
 .block-highlight.block-bg-noise:after {
-  background: #ededed url(../img/bg_noise-bg.png) left top repeat;
+  background: #ededed image-url('bg_noise-bg.png') left top repeat;
 }
 .block-highlight.block-bg-grey,
 .block-highlight.block-bg-grey:after {
@@ -1152,7 +1152,7 @@
   border: none;
   border-bottom: 1px solid #bfbfbf;
   padding: 0;
-  background: #ededed url(../img/bg_noise-bg.png) left top repeat;
+  background: #ededed image-url('bg_noise-bg.png') left top repeat;
   -webkit-box-shadow: 1px 1px 5px #d5d5d5;
   -moz-box-shadow: 1px 1px 5px #d5d5d5;
   box-shadow: 1px 1px 5px #d5d5d5;
@@ -1447,7 +1447,7 @@ blockquote {
   padding: 0;
   margin: 1em 0 0 0;
   position: relative;
-  background: url(../img/bg_blockquote.png) left top no-repeat;
+  background: image-url('bg_blockquote.png') left top no-repeat;
 }
 blockquote:before,
 blockquote:after {
@@ -1493,7 +1493,7 @@ blockquote small a:hover {
   color: #d0d3d4;
 }
 blockquote.right {
-  background: url(../img/bg_blockquote-flipped.png) right top no-repeat;
+  background: image-url('bg_blockquote-flipped.png') right top no-repeat;
 }
 blockquote.right p {
   padding: 0 160px 1em 1em;
@@ -1508,7 +1508,7 @@ blockquote.right small {
   padding-left: 0;
 }
 .bg-noise {
-  background: #ededed url(../img/bg_noise-bg.png) left top repeat;
+  background: #ededed image-url('bg_noise-bg.png') left top repeat;
 }
 img {
   display: block;
@@ -1540,19 +1540,19 @@ a:hover {
   border-bottom: 2px solid #ff5821;
 }
 .benches {
-  background-image: url(../img/backgrounds/benches.png);
+  background-image: image-url('backgrounds/benches.png');
 }
 .boots {
-  background-image: url(../img/backgrounds/boots.png);
+  background-image: image-url('backgrounds/boots.png');
 }
 .buildings {
-  background-image: url(../img/backgrounds/buildings.png);
+  background-image: image-url('backgrounds/buildings.png');
 }
 .city {
-  background-image: url(../img/backgrounds/city.png);
+  background-image: image-url('backgrounds/city.png');
 }
 .metro {
-  background-image: url(../img/backgrounds/metro.png);
+  background-image: image-url('backgrounds/metro.png');
 }
 a.btn-hh-trigger {
   display: block;
@@ -1714,11 +1714,11 @@ a.btn-hh-trigger.target-open:after {
 
 .sidebar {
   min-height: 450px;
-  background: url(../img/misc/bg_sidebar-left.png) right 15px top -60px no-repeat;
+  background: image-url('misc/bg_sidebar-left.png') right 15px top -60px no-repeat;
   padding-top: 30px;
 }
 .sidebar.sidebar-right {
-  background: url(../img/misc/bg_sidebar-right.png) right 15px top -60px no-repeat;
+  background: image-url('misc/bg_sidebar-right.png') right 15px top -60px no-repeat;
 }
 .fullscreen-centered #background-wrapper {
   position: fixed;
@@ -1801,7 +1801,7 @@ a.btn-hh-trigger.target-open:after {
   display: block;
   text-shadow: none;
   line-height: 1;
-  background: url(../img/logo.png) left top no-repeat;
+  background: image-url('logo.png') left top no-repeat;
   height: 30px;
   width: 145px;
 }

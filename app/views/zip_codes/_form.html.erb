@@ -1,0 +1,47 @@
+<%= form_with(model: zip_code, local: true) do |form| %>
+  <% if zip_code.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(zip_code.errors.count, "error") %> prohibited this zip_code from being saved:</h2>
+
+      <ul>
+      <% zip_code.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :value %>
+    <%= form.text_field :value, id: :zip_code_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :median_listing_price %>
+    <%= form.text_field :median_listing_price, id: :zip_code_median_listing_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_listing_price %>
+    <%= form.text_field :average_listing_price, id: :zip_code_average_listing_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_to_rent_ratio %>
+    <%= form.text_field :price_to_rent_ratio, id: :zip_code_price_to_rent_ratio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :median_rent %>
+    <%= form.text_field :median_rent, id: :zip_code_median_rent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estimated_rent %>
+    <%= form.text_field :estimated_rent, id: :zip_code_estimated_rent %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
