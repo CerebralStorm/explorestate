@@ -8,6 +8,9 @@ class Lead < ApplicationRecord
   belongs_to :user
   belongs_to :zip_code
 
+  validates :user, presence: true
+  validates :zip_code, presence: true
+
   before_save :set_default_status
 
   def set_default_status
