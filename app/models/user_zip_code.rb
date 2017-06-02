@@ -1,0 +1,2 @@
+class UserZipCode < ApplicationRecord
+end
