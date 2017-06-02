@@ -8,6 +8,8 @@ class CreateLeads < ActiveRecord::Migration[5.1]
       t.string :zip
       t.string :status
       t.string :lead_type
+      t.float :price
+      t.float :value
 
       t.timestamps
     end

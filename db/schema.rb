@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20170602162955) do
     t.string "zip"
     t.string "status"
     t.string "lead_type"
+    t.float "price"
+    t.float "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
